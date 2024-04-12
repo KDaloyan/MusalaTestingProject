@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Tests]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="TestChrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.musala.com/"/>
+    <classes>
+      <class name="musala.test.TestCases">
+        <methods>
+          <include name="initialize"/>
+          <include name="testCase1" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="testCase2"/>
+        </methods>
+      </class> <!-- musala.test.TestCases -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
+</suite> <!-- Failed suite [Tests] -->
