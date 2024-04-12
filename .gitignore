@@ -19,7 +19,7 @@ nb-configuration.xml
 out
 src/generated
 target
-#test-output
+test-output
 test-output-tests
 testng.iml
 z_build
