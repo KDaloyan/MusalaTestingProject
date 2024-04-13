@@ -19,8 +19,9 @@ nb-configuration.xml
 out
 src/generated
 target
-test-output
+test-output/*
 test-output-tests
+test-output/old
 testng.iml
 z_build
 .DS_Store
