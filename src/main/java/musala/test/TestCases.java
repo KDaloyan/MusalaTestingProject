@@ -35,10 +35,10 @@ public class TestCases {
 	@DataProvider(name = "applyData")
 	public Object[][] applyData() {
 	 return new Object[][] {
-	   { "Kaloyan", "kaloyan.dzhongov@gmail.com", "0888033498","www.linkedin.com/in/kaloyan-dzhongov-360603132","Test Message" },
-	   { "", "kaloyan.dzhongov@gmail","", "","Test Message" },
-	   { "Kaloyan", "", "0888033498","www.linkedin.com/in/kaloyan-dzhongov-360603132","" },
-	   { "", "kaloyan.dzhongov@gmail.com", "0888033498","www.linkedin.com/in/kaloyan-dzhongov-360603132","" }
+	   { "Kaloyan", "kaloyan.dzhongov@gmail.com", "0888033498","www.linkedin.com/in/kaloyan-dzhongov-360603132","Test Message", "","","" },
+	   { "", "kaloyan.dzhongov@gmail","sa", "","Test Message", "The field is required.", "", "The telephone number is invalid." },
+	   { "Kaloyan", "", "0888033498","www.linkedin.com/in/kaloyan-dzhongov-360603132","", "", "The field is required.","" },
+	   { "Kaloyan", "test@test", "0888033498","www.linkedin.com/in/kaloyan-dzhongov-360603132","", "", "The e-mail address entered is invalid.", "" }
 	 };
 	}
 
@@ -140,7 +140,7 @@ public class TestCases {
 	}
 
 	@Test(dataProvider = "applyData")
-	public void testCase3(String name, String email, String mobile, String linkedin, String message) throws InterruptedException, IOException {
+	public void testCase3(String name, String email, String mobile, String linkedin, String message, String name_err, String email_err, String mobile_err) throws InterruptedException, IOException {
 
 		// 1. Visit http://www.musala.com/
 		driver.get(url);
@@ -200,8 +200,22 @@ public class TestCases {
 		String CV_path = file.getCanonicalPath();
 		System.out.println("PATH: "+CV_path);
 		uploadCV.sendKeys(CV_path);
-		
 		driver.findElement(By.cssSelector("input[value=\"Send\"]")).click();
+		
+		//12 Verify shown error messages (e.g., The field is required, The e-mail address entered is invalid etc.)
+		String fild_err;
+		if(!name_err.isEmpty()) {
+			fild_err = driver.findElement(By.cssSelector("[data-name=\"your-name\"] span")).getText();
+			Assert.assertEquals(name_err,fild_err );
+		}
+		if(!email_err.isEmpty()) {
+			fild_err = driver.findElement(By.cssSelector("[data-name=\"your-email\"] span")).getText();
+			Assert.assertEquals(email_err,fild_err );
+		}
+		if(!mobile_err.isEmpty()) {
+			fild_err = driver.findElement(By.cssSelector("[data-name=\"mobile-number\"] span")).getText();
+			Assert.assertEquals(mobile_err,fild_err );
+		}
 	}
 	
 	@Test()
