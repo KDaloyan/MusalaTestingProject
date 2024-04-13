@@ -1,6 +1,7 @@
 package musala.test;
 
 
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import org.json.simple.parser.ParseException;
@@ -139,7 +140,7 @@ public class TestCases {
 	}
 
 	@Test(dataProvider = "applyData")
-	public void testCase3(String name, String email, String mobile, String linkedin, String message) throws InterruptedException {
+	public void testCase3(String name, String email, String mobile, String linkedin, String message) throws InterruptedException, IOException {
 
 		// 1. Visit http://www.musala.com/
 		driver.get(url);
@@ -195,7 +196,10 @@ public class TestCases {
 		
 		// 11.Upload a CV document, and click ‘Send’ button
 		WebElement uploadCV = driver.findElement(By.name("upload-cv"));
-		uploadCV.sendKeys("C:\\Users\\kaloj\\eclipse-workspace\\MusalaTestingProject\\data\\CV_Kaloyan_Dzhongov.pdf");
+		File file = new File("../MusalaTestingProject/data/CV_Kaloyan_Dzhongov.pdf");
+		String CV_path = file.getCanonicalPath();
+		System.out.println("PATH: "+CV_path);
+		uploadCV.sendKeys(CV_path);
 		
 		driver.findElement(By.cssSelector("input[value=\"Send\"]")).click();
 	}
