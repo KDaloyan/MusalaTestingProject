@@ -7,6 +7,9 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.DataProvider;
 
 public class Tools {
@@ -18,7 +21,6 @@ public class Tools {
 	 * @throws IOException
 	 * @throws ParseException
 	 */
-	@DataProvider(name = "jason_parsing")
 	public String[] json_reader(String json_file) throws IOException, ParseException{
 		JSONParser jsonParser = new JSONParser();
 		
@@ -37,9 +39,17 @@ public class Tools {
 		return arr;
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+	/**
+	 * Move to element and click on it.
+	 * @param element - WebElement for click
+	 * @param driver - WebDriver
+	 */
+	public void move_click(WebElement element, WebDriver driver) {
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		actions.perform();
+		element.click();
 	}
 
 }

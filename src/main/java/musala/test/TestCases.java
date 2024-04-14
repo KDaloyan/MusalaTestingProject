@@ -25,10 +25,10 @@ public class TestCases {
 
 	private WebDriver driver;
 	public String url;
+	Tools tools = new Tools();;
 	
 	@DataProvider(name = "jason_parsing")
 	public String[] json_reader() throws IOException, ParseException {
-		Tools tools = new Tools();
 		return tools.json_reader("../MusalaTestingProject/data/emails.json");
 	}
 	
@@ -84,7 +84,6 @@ public class TestCases {
 		// 5. Click ‘Send’ button
 		WebElement send_button = driver.findElement(By.cssSelector("[value=\"Send\"]"));
 		((JavascriptExecutor) driver).executeScript("arguments[0];", send_button);
-		send_button.click();
 
 		// 6. Verify that error message ‘The e-mail address entered is invalid.’ appears
 		WebElement email_error = driver.findElement(By.cssSelector("[data-name=\"your-email\"] .wpcf7-not-valid-tip"));
@@ -166,9 +165,7 @@ public class TestCases {
 		
 		//6. Choose open position by name (e.g., Experienced Automation QA Engineer)
 		WebElement position1 = driver.findElement(By.cssSelector("[alt=\"Automation QA Engineer\"]"));
-		Actions actions = new Actions(driver);
-		actions.moveToElement(position1).perform();
-		actions.click(position1).perform();
+		tools.move_click(position1, driver);
 
 		//7. Verify that 4 main sections are shown: General Description, Requirements, Responsibilities, What we offer
 		WebElement grn_descript = driver.findElement(By.cssSelector(".joinus-content:nth-child(1) .requirements:nth-child(1) h2"));
@@ -183,9 +180,7 @@ public class TestCases {
 		//8. Verify that ‘Apply’ button is present at the bottom
 		WebElement apply = driver.findElement(By.cssSelector("input.btn-apply"));
 		//9. Click ‘Apply’ button
-		actions.moveToElement(apply);
-		actions.perform();
-		apply.click();
+		tools.move_click(apply, driver);
 		
 		//10. Prepare a few sets of negative data (e.g., leave required field(s) empty, enter e-mail with invalid format etc.)
 		driver.findElement(By.name("your-name")).sendKeys(name);
