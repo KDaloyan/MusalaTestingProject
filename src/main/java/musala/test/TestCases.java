@@ -4,14 +4,15 @@ package musala.test;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -25,7 +26,7 @@ public class TestCases {
 
 	private WebDriver driver;
 	public String url;
-	Tools tools = new Tools();;
+	Tools tools = new Tools();
 	
 	@DataProvider(name = "jason_parsing")
 	public String[] json_reader() throws IOException, ParseException {
@@ -56,17 +57,23 @@ public class TestCases {
 		default:
 			throw new ExceptionInInitializerError("Browser name is not correct");
 		}
-		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(8000));
+		driver.get(url);
+		Dimension dimension = new Dimension(1920, 1080);
+		driver.manage().window().setSize(dimension);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
+		
+		WebElement acceptCookie = driver.findElement(By.cssSelector("#wt-cli-accept-all-btn"));
+		acceptCookie.click();
 	}
 
 	@Test(dataProvider = "jason_parsing")
 	public void testCase1(String email) throws InterruptedException {
 		
 		// 1. Visit http://www.musala.com/
-		driver.get(url);
-		driver.manage().window().maximize();
 
 		// 2. Scroll down and go to ‘Contact Us’
+		
 		WebElement contactUs = driver.findElement(By.cssSelector("[data-alt=\"Contact us\"]"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", contactUs);
 
@@ -83,29 +90,27 @@ public class TestCases {
 
 		// 5. Click ‘Send’ button
 		WebElement send_button = driver.findElement(By.cssSelector("[value=\"Send\"]"));
-		((JavascriptExecutor) driver).executeScript("arguments[0];", send_button);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", send_button);
 
 		// 6. Verify that error message ‘The e-mail address entered is invalid.’ appears
 		WebElement email_error = driver.findElement(By.cssSelector("[data-name=\"your-email\"] .wpcf7-not-valid-tip"));
-		org.testng.Assert.assertEquals(email_error.getText(), "The e-mail address entered is invalid.");
+		Assert.assertEquals(email_error.getText(), "The e-mail address entered is invalid.");
 	}
 
 	@Test()
 	public void testCase2() throws InterruptedException {
 
 		// 1. Visit http://www.musala.com/
-		driver.get(url);
-		driver.manage().window().maximize();
 
 		// 2. Click ‘Company’ tap from the top
 
 		WebElement company = driver.findElement(By.cssSelector("#navbar #menu .menu-item-887 a"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", company);
-		Thread.sleep(1000);
 
 		// 3. Verify that the correct URL (http://www.musala.com/company/) loads
+		tools.waithForUrl("https://www.musala.com/company/", driver);
 		String url1 = driver.getCurrentUrl();
-		Assert.assertEquals(url1, "https://www.musala.com/company/"); //TODo
+		Assert.assertEquals(url1, "https://www.musala.com/company/");
 
 		// 4. Verify that there is ‘Leadership’ section
 		WebElement leadershipSection = driver.findElement(By.cssSelector(".company-members h2"));
@@ -116,7 +121,6 @@ public class TestCases {
 		// 5. Click the Facebook link from the footer
 		WebElement facebook_link = driver.findElement(By.cssSelector(".musala-icon-facebook"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", facebook_link);
-		Thread.sleep(1000);
 		// 6. Verify that the correct URL (https://www.facebook.com/MusalaSoft?fref=ts)
 		// loads and verify if the Musala Soft profile picture appears on the new page
 		for (String windowHandle2 : driver.getWindowHandles()) {
@@ -125,6 +129,7 @@ public class TestCases {
 				break;
 			}
 		}
+		tools.waithForUrl("https://www.facebook.com/MusalaSoft?fref=ts", driver);
 		String url2 = driver.getCurrentUrl();
 		 Assert.assertEquals(url2,
 		 "https://www.facebook.com/MusalaSoft?fref=ts");
@@ -142,8 +147,6 @@ public class TestCases {
 	public void testCase3(String name, String email, String mobile, String linkedin, String message, String name_err, String email_err, String mobile_err) throws InterruptedException, IOException {
 
 		// 1. Visit http://www.musala.com/
-		driver.get(url);
-		driver.manage().window().maximize();
 
 		// 2. Navigate to Careers menu (from the top)
 		WebElement careers = driver.findElement(By.cssSelector("#navbar #menu .menu-item-478 a"));
@@ -153,19 +156,18 @@ public class TestCases {
 		driver.findElement(By.cssSelector(".contact-label-code")).click();
 
 		// 4. Verify that ‘Join Us’ page is opened (can verify that URL is correct:
+		tools.waithForUrl("https://www.musala.com/careers/join-us/", driver);
 		String currentUrl = driver.getCurrentUrl();
 		Assert.assertEquals(currentUrl, "https://www.musala.com/careers/join-us/");// ToDo
 
 		// 5. From the dropdown ‘Select location’ select ‘Anywhere’
 		driver.findElement(By.name("get_location")).click();
 		driver.findElement(By.cssSelector("[value=\"Anywhere\"]")).click();
-		
-		WebElement acceptCookie = driver.findElement(By.cssSelector("#wt-cli-accept-all-btn"));
-		acceptCookie.click();
-		
+				
 		//6. Choose open position by name (e.g., Experienced Automation QA Engineer)
 		WebElement position1 = driver.findElement(By.cssSelector("[alt=\"Automation QA Engineer\"]"));
-		tools.move_click(position1, driver);
+//		tools.move_click(position1, driver);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", position1);
 
 		//7. Verify that 4 main sections are shown: General Description, Requirements, Responsibilities, What we offer
 		WebElement grn_descript = driver.findElement(By.cssSelector(".joinus-content:nth-child(1) .requirements:nth-child(1) h2"));
@@ -180,7 +182,7 @@ public class TestCases {
 		//8. Verify that ‘Apply’ button is present at the bottom
 		WebElement apply = driver.findElement(By.cssSelector("input.btn-apply"));
 		//9. Click ‘Apply’ button
-		tools.move_click(apply, driver);
+		tools.move_click(By.cssSelector("input.btn-apply"), driver);
 		
 		//10. Prepare a few sets of negative data (e.g., leave required field(s) empty, enter e-mail with invalid format etc.)
 		driver.findElement(By.name("your-name")).sendKeys(name);
@@ -193,7 +195,6 @@ public class TestCases {
 		WebElement uploadCV = driver.findElement(By.name("upload-cv"));
 		File file = new File("../MusalaTestingProject/data/CV_Kaloyan_Dzhongov.pdf");
 		String CV_path = file.getCanonicalPath();
-		System.out.println("PATH: "+CV_path);
 		uploadCV.sendKeys(CV_path);
 		driver.findElement(By.cssSelector("input[value=\"Send\"]")).click();
 		
@@ -217,8 +218,6 @@ public class TestCases {
 	public void testCase4() throws InterruptedException {
 
 		// 1. Visit http://www.musala.com/
-		driver.get(url);
-		driver.manage().window().maximize();
 
 		// 2. Go to Careers
 		WebElement careers = driver.findElement(By.cssSelector("#navbar #menu .menu-item-478 a"));
