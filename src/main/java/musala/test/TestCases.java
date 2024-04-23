@@ -13,6 +13,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -27,6 +29,7 @@ public class TestCases {
 	private WebDriver driver;
 	public String url;
 	Tools tools = new Tools();
+	private WebDriverWait wait;
 	
 	@DataProvider(name = "jason_parsing")
 	public String[] json_reader() throws IOException, ParseException {
@@ -45,7 +48,7 @@ public class TestCases {
 
 	@Parameters({"browser","url"})
 	@BeforeMethod(alwaysRun = true)
-	public void initialize(String browser, String url) {
+	public void initialize(String browser, String url) throws InterruptedException {
 		this.url = url;
 		switch (browser) {
 		case "chrome":
@@ -62,12 +65,13 @@ public class TestCases {
 		driver.manage().window().setSize(dimension);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
+		wait = new WebDriverWait(driver, Duration.ofMillis(10000));
 		
 		WebElement acceptCookie = driver.findElement(By.cssSelector("#wt-cli-accept-all-btn"));
 		acceptCookie.click();
 	}
 
-	@Test(dataProvider = "jason_parsing")
+	@Test(dataProvider = "jason_parsing", description = "Test1 description")
 	public void testCase1(String email) throws InterruptedException {
 		
 		// 1. Visit http://www.musala.com/
@@ -75,10 +79,12 @@ public class TestCases {
 		// 2. Scroll down and go to ‘Contact Us’
 		
 		WebElement contactUs = driver.findElement(By.cssSelector("[data-alt=\"Contact us\"]"));
+		wait.until(ExpectedConditions.elementToBeClickable(contactUs));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", contactUs);
-
+		
 		// 3. Fill all required fields except email
 		WebElement name = driver.findElement(By.name("your-name"));
+		wait.until(ExpectedConditions.elementToBeClickable(name));
 		name.sendKeys("Kaloyan Dzhongov");
 
 		// 4. Under email field enter string with wrong email format (e.g., test@test)
@@ -182,9 +188,10 @@ public class TestCases {
 		//8. Verify that ‘Apply’ button is present at the bottom
 		WebElement apply = driver.findElement(By.cssSelector("input.btn-apply"));
 		//9. Click ‘Apply’ button
-		tools.move_click(By.cssSelector("input.btn-apply"), driver);
+		tools.move_click(apply, driver);
 		
 		//10. Prepare a few sets of negative data (e.g., leave required field(s) empty, enter e-mail with invalid format etc.)
+//		wait.until(ExpectedConditions.elementToBeClickable(By.name("your-name")));
 		driver.findElement(By.name("your-name")).sendKeys(name);
 		driver.findElement(By.name("your-email")).sendKeys(email);
 		driver.findElement(By.name("mobile-number")).sendKeys(mobile);
@@ -196,8 +203,8 @@ public class TestCases {
 		File file = new File("../MusalaTestingProject/data/CV_Kaloyan_Dzhongov.pdf");
 		String CV_path = file.getCanonicalPath();
 		uploadCV.sendKeys(CV_path);
-		driver.findElement(By.cssSelector("input[value=\"Send\"]")).click();
-		
+	
+	
 		//12 Verify shown error messages (e.g., The field is required, The e-mail address entered is invalid etc.)
 		String fild_err;
 		if(!name_err.isEmpty()) {

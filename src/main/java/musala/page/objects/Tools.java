@@ -9,12 +9,11 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.DataProvider;
 
 public class Tools {
 	private WebDriverWait wait;
@@ -51,15 +50,18 @@ public class Tools {
 	 * @param element - WebElement for click
 	 * @param driver - WebDriver
 	 * @author K.Dzhongov
+	 * @throws InterruptedException 
 	 */
-	public void move_click(By locator, WebDriver driver) {
-		WebElement element = driver.findElement(locator);
+	public void move_click(WebElement element, WebDriver driver) throws InterruptedException {
 		wait = new WebDriverWait(driver, Duration.ofMillis(10000));
-		wait.until(ExpectedConditions.elementToBeClickable(locator));
-		Actions actions = new Actions(driver);
-		actions.moveToElement(element);
-		actions.perform();
-		element.click();
+//		Actions actions = new Actions(driver);
+//		actions.moveToElement(element);
+//		actions.perform();
+//		element.click();
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+		Thread.sleep(1000);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
 	}
 	
 	/**
