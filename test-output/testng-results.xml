@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-23T23:32:43 EEST" name="Tests" finished-at="2024-04-23T23:34:35 EEST" duration-ms="111215">
+  <suite started-at="2024-04-24T08:19:59 EEST" name="Tests" finished-at="2024-04-24T08:28:00 EEST" duration-ms="481956">
     <groups>
     </groups>
-    <test started-at="2024-04-23T23:32:43 EEST" name="TestChrome" finished-at="2024-04-23T23:34:35 EEST" duration-ms="111215">
+    <test started-at="2024-04-24T08:19:59 EEST" name="TestChrome" finished-at="2024-04-24T08:26:03 EEST" duration-ms="364666">
       <class name="musala.test.TestCases">
-        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:32:43 EEST" name="initialize" finished-at="2024-04-23T23:32:49 EEST" duration-ms="5930" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:19:59 EEST" name="initialize" finished-at="2024-04-24T08:21:49 EEST" duration-ms="110279" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:32:49 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-23T23:32:50 EEST" duration-ms="1182" status="PASS">
+        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:21:49 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-24T08:21:49 EEST" duration-ms="578" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,11 +34,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:32:50 EEST" name="afterClass" finished-at="2024-04-23T23:32:51 EEST" duration-ms="123" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:21:49 EEST" name="afterClass" finished-at="2024-04-24T08:21:50 EEST" duration-ms="148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:32:51 EEST" name="initialize" finished-at="2024-04-23T23:32:56 EEST" duration-ms="5272" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:21:50 EEST" name="initialize" finished-at="2024-04-24T08:22:43 EEST" duration-ms="53194" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,7 +54,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:32:56 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-23T23:32:57 EEST" duration-ms="647" status="PASS">
+        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:22:43 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-24T08:22:45 EEST" duration-ms="1785" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,11 +65,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:32:57 EEST" name="afterClass" finished-at="2024-04-23T23:32:57 EEST" duration-ms="109" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:22:45 EEST" name="afterClass" finished-at="2024-04-24T08:22:45 EEST" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:32:57 EEST" name="initialize" finished-at="2024-04-23T23:33:02 EEST" duration-ms="5736" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:22:45 EEST" name="initialize" finished-at="2024-04-24T08:23:53 EEST" duration-ms="68433" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:02 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-23T23:33:03 EEST" duration-ms="473" status="PASS">
+        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:23:53 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-24T08:23:56 EEST" duration-ms="2663" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,11 +96,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:03 EEST" name="afterClass" finished-at="2024-04-23T23:33:03 EEST" duration-ms="101" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:23:56 EEST" name="afterClass" finished-at="2024-04-24T08:23:56 EEST" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:03 EEST" name="initialize" finished-at="2024-04-23T23:33:08 EEST" duration-ms="5216" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:23:56 EEST" name="initialize" finished-at="2024-04-24T08:24:04 EEST" duration-ms="8213" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,7 +116,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:08 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-23T23:33:10 EEST" duration-ms="1618" status="PASS">
+        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:24:04 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-24T08:24:07 EEST" duration-ms="2429" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,11 +127,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:10 EEST" name="afterClass" finished-at="2024-04-23T23:33:10 EEST" duration-ms="123" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:24:07 EEST" name="afterClass" finished-at="2024-04-24T08:24:07 EEST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:10 EEST" name="initialize" finished-at="2024-04-23T23:33:15 EEST" duration-ms="5337" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:24:07 EEST" name="initialize" finished-at="2024-04-24T08:24:16 EEST" duration-ms="9013" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -147,7 +147,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:15 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-23T23:33:16 EEST" duration-ms="660" status="PASS">
+        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:24:16 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-24T08:24:19 EEST" duration-ms="3013" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -158,11 +158,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:16 EEST" name="afterClass" finished-at="2024-04-23T23:33:16 EEST" duration-ms="98" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:24:19 EEST" name="afterClass" finished-at="2024-04-24T08:24:19 EEST" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:16 EEST" name="initialize" finished-at="2024-04-23T23:33:21 EEST" duration-ms="5446" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:24:19 EEST" name="initialize" finished-at="2024-04-24T08:24:27 EEST" duration-ms="7533" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -178,15 +178,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testCase2()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:21 EEST" name="testCase2" finished-at="2024-04-23T23:33:24 EEST" duration-ms="2757" status="PASS">
+        <test-method signature="testCase2()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:24:27 EEST" name="testCase2" finished-at="2024-04-24T08:24:31 EEST" duration-ms="4391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase2 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:24 EEST" name="afterClass" finished-at="2024-04-23T23:33:24 EEST" duration-ms="127" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:24:31 EEST" name="afterClass" finished-at="2024-04-24T08:24:31 EEST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:24 EEST" name="initialize" finished-at="2024-04-23T23:33:30 EEST" duration-ms="5903" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:24:31 EEST" name="initialize" finished-at="2024-04-24T08:24:39 EEST" duration-ms="7473" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -202,7 +202,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testCase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:30 EEST" name="testCase3" data-provider="applyData" finished-at="2024-04-23T23:33:38 EEST" duration-ms="8268" status="PASS">
+        <test-method signature="testCase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:24:39 EEST" name="testCase3" data-provider="applyData" finished-at="2024-04-24T08:24:51 EEST" duration-ms="12459" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -248,11 +248,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase3 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:38 EEST" name="afterClass" finished-at="2024-04-23T23:33:39 EEST" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:24:51 EEST" name="afterClass" finished-at="2024-04-24T08:24:51 EEST" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:39 EEST" name="initialize" finished-at="2024-04-23T23:33:44 EEST" duration-ms="5688" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:24:51 EEST" name="initialize" finished-at="2024-04-24T08:24:59 EEST" duration-ms="7371" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -268,7 +268,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testCase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:44 EEST" name="testCase3" data-provider="applyData" finished-at="2024-04-23T23:33:52 EEST" duration-ms="8047" status="PASS">
+        <test-method signature="testCase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:24:59 EEST" name="testCase3" data-provider="applyData" finished-at="2024-04-24T08:25:10 EEST" duration-ms="11594" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -314,11 +314,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase3 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:52 EEST" name="afterClass" finished-at="2024-04-23T23:33:53 EEST" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:25:10 EEST" name="afterClass" finished-at="2024-04-24T08:25:10 EEST" duration-ms="161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:53 EEST" name="initialize" finished-at="2024-04-23T23:33:58 EEST" duration-ms="5138" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:25:10 EEST" name="initialize" finished-at="2024-04-24T08:25:19 EEST" duration-ms="8491" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -334,7 +334,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testCase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:33:58 EEST" name="testCase3" data-provider="applyData" finished-at="2024-04-23T23:34:06 EEST" duration-ms="8687" status="PASS">
+        <test-method signature="testCase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:25:19 EEST" name="testCase3" data-provider="applyData" finished-at="2024-04-24T08:25:29 EEST" duration-ms="9979" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -380,11 +380,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase3 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:34:06 EEST" name="afterClass" finished-at="2024-04-23T23:34:06 EEST" duration-ms="123" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:25:29 EEST" name="afterClass" finished-at="2024-04-24T08:25:29 EEST" duration-ms="149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:34:06 EEST" name="initialize" finished-at="2024-04-23T23:34:12 EEST" duration-ms="5491" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:25:29 EEST" name="initialize" finished-at="2024-04-24T08:25:35 EEST" duration-ms="5862" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -400,7 +400,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testCase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:34:12 EEST" name="testCase3" data-provider="applyData" finished-at="2024-04-23T23:34:21 EEST" duration-ms="8577" status="PASS">
+        <test-method signature="testCase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:25:35 EEST" name="testCase3" data-provider="applyData" finished-at="2024-04-24T08:25:47 EEST" duration-ms="11769" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -446,11 +446,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase3 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:34:21 EEST" name="afterClass" finished-at="2024-04-23T23:34:21 EEST" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:25:47 EEST" name="afterClass" finished-at="2024-04-24T08:25:47 EEST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:34:21 EEST" name="initialize" finished-at="2024-04-23T23:34:26 EEST" duration-ms="5212" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:25:47 EEST" name="initialize" finished-at="2024-04-24T08:25:53 EEST" duration-ms="6275" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -466,15 +466,486 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testCase4()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:34:26 EEST" name="testCase4" finished-at="2024-04-23T23:34:34 EEST" duration-ms="8489" status="PASS">
+        <test-method signature="testCase4()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:25:53 EEST" name="testCase4" finished-at="2024-04-24T08:26:03 EEST" duration-ms="9943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase4 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-23T23:34:34 EEST" name="afterClass" finished-at="2024-04-23T23:34:35 EEST" duration-ms="127" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@7161d8d1]" started-at="2024-04-24T08:26:03 EEST" name="afterClass" finished-at="2024-04-24T08:26:03 EEST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- musala.test.TestCases -->
     </test> <!-- TestChrome -->
+    <test started-at="2024-04-24T08:19:59 EEST" name="TestFirefox" finished-at="2024-04-24T08:28:00 EEST" duration-ms="481956">
+      <class name="musala.test.TestCases">
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:19:59 EEST" name="initialize" finished-at="2024-04-24T08:21:57 EEST" duration-ms="118279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.musala.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:21:57 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-24T08:22:00 EEST" duration-ms="3529" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test.test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:22:00 EEST" name="afterClass" finished-at="2024-04-24T08:22:03 EEST" duration-ms="2260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:22:03 EEST" name="initialize" finished-at="2024-04-24T08:23:17 EEST" duration-ms="74821" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.musala.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:23:17 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-24T08:23:21 EEST" duration-ms="3114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:23:21 EEST" name="afterClass" finished-at="2024-04-24T08:23:22 EEST" duration-ms="1514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:23:22 EEST" name="initialize" finished-at="2024-04-24T08:25:02 EEST" duration-ms="99938" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.musala.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:25:02 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-24T08:25:03 EEST" duration-ms="1075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:25:03 EEST" name="afterClass" finished-at="2024-04-24T08:25:04 EEST" duration-ms="983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:25:04 EEST" name="initialize" finished-at="2024-04-24T08:25:21 EEST" duration-ms="16516" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.musala.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:25:21 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-24T08:25:27 EEST" duration-ms="6298" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:25:27 EEST" name="afterClass" finished-at="2024-04-24T08:25:28 EEST" duration-ms="854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:25:28 EEST" name="initialize" finished-at="2024-04-24T08:25:45 EEST" duration-ms="17726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.musala.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testCase1(java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:25:45 EEST" name="testCase1" description="Test1 description" data-provider="jason_parsing" finished-at="2024-04-24T08:25:47 EEST" duration-ms="1086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@#$@1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:25:47 EEST" name="afterClass" finished-at="2024-04-24T08:25:50 EEST" duration-ms="3594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:25:50 EEST" name="initialize" finished-at="2024-04-24T08:26:04 EEST" duration-ms="14324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.musala.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testCase2()[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:26:04 EEST" name="testCase2" finished-at="2024-04-24T08:26:06 EEST" duration-ms="1597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:26:06 EEST" name="afterClass" finished-at="2024-04-24T08:26:07 EEST" duration-ms="1010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:26:07 EEST" name="initialize" finished-at="2024-04-24T08:26:17 EEST" duration-ms="9911" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.musala.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testCase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:26:17 EEST" name="testCase3" data-provider="applyData" finished-at="2024-04-24T08:26:24 EEST" duration-ms="6500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kaloyan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kaloyan.dzhongov@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0888033498]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[www.linkedin.com/in/kaloyan-dzhongov-360603132]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Message]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase3 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:26:24 EEST" name="afterClass" finished-at="2024-04-24T08:26:24 EEST" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:26:24 EEST" name="initialize" finished-at="2024-04-24T08:26:40 EEST" duration-ms="15142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.musala.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testCase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:26:40 EEST" name="testCase3" data-provider="applyData" finished-at="2024-04-24T08:26:47 EEST" duration-ms="7114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kaloyan.dzhongov@gmail]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sa]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Message]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[The field is required.]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[The telephone number is invalid.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase3 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:26:47 EEST" name="afterClass" finished-at="2024-04-24T08:26:48 EEST" duration-ms="886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:26:48 EEST" name="initialize" finished-at="2024-04-24T08:26:58 EEST" duration-ms="10212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.musala.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testCase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:26:58 EEST" name="testCase3" data-provider="applyData" finished-at="2024-04-24T08:27:04 EEST" duration-ms="5808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kaloyan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0888033498]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[www.linkedin.com/in/kaloyan-dzhongov-360603132]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[The field is required.]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase3 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:27:04 EEST" name="afterClass" finished-at="2024-04-24T08:27:04 EEST" duration-ms="836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:27:04 EEST" name="initialize" finished-at="2024-04-24T08:27:12 EEST" duration-ms="7581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.musala.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testCase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:27:12 EEST" name="testCase3" data-provider="applyData" finished-at="2024-04-24T08:27:44 EEST" duration-ms="32118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kaloyan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0888033498]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[www.linkedin.com/in/kaloyan-dzhongov-360603132]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[The e-mail address entered is invalid.]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase3 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:27:44 EEST" name="afterClass" finished-at="2024-04-24T08:27:45 EEST" duration-ms="919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String)[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:27:45 EEST" name="initialize" finished-at="2024-04-24T08:27:53 EEST" duration-ms="7518" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.musala.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testCase4()[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:27:53 EEST" name="testCase4" finished-at="2024-04-24T08:28:00 EEST" duration-ms="7086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase4 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:musala.test.TestCases@673fdbce]" started-at="2024-04-24T08:28:00 EEST" name="afterClass" finished-at="2024-04-24T08:28:00 EEST" duration-ms="872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- musala.test.TestCases -->
+    </test> <!-- TestFirefox -->
   </suite> <!-- Tests -->
 </testng-results>

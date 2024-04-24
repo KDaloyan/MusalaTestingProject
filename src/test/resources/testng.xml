@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Tests" parallel="methods" thread-count="1">
+<suite name="Tests" parallel="tests" thread-count="2">
 	<test name="TestChrome">
 		<parameter name="url" value="https://www.musala.com/" />
 		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="musala.test.TestCases" />
+		</classes>
+	</test>
+	<test name="TestFirefox">
+		<parameter name="url" value="https://www.musala.com/" />
+		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="musala.test.TestCases" />
 		</classes>
